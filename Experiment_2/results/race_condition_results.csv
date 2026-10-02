@@ -1,0 +1,5 @@
+Program,Library,Synchronisation,Expected,Actual
+race.c,Pthreads,No lock,400000,149386
+mutex.c,Pthreads,pthread_mutex,400000,400000
+omp_race.c,OpenMP,No lock,400000,100000
+omp_critical.c,OpenMP,omp critical,400000,400000
