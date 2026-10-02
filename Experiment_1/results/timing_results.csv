@@ -1,0 +1,5 @@
+Implementation,Model,Platform,Workers,Time_s,Kernel_Time_s,Verification
+Sequential,Single-thread CPU,WSL2 Ubuntu (GCC 15.2.0 -O2),1,266.477234,,4000.00
+OpenMP,Shared memory,WSL2 Ubuntu (GCC 15.2.0 -O2 -fopenmp),8,41.021555,,4000.00
+MPI,Distributed memory,4 x Ubuntu 24.04 VMs (Open MPI / GCC 13.3.0),4,226.167575,,4000.00
+CUDA,GPU SIMT,NVIDIA GPU (nvcc -O2 / MSVC x64),16000000,0.077087,0.064499,4000.00
